@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* REGOLE HEADER */
+.nav-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* sezione sinistra */
+.left, .right {
+    width: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-left, .list-right {
+    width: 300px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    
+}
+
+.list-left  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* sezione destra */
+
+button {
+    height: 40px;
+}
+
+.list-right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+
+.nav-head {
+    height: 90px;
+    background-color: green;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+}
+
