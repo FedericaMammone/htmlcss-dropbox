@@ -18,15 +18,14 @@ a {
 
 /* sezione sinistra */
 .left, .right {
-    width: 500px;
-    background-color: white;
+    width: 30%;
+   
     display: flex;
     justify-content: space-around;
 }
 
 .list-left, .list-right {
     width: 300px;
-    background-color: yellow;
     display: flex;
     align-items: center;
     
@@ -52,9 +51,38 @@ button {
 }
 
 
+/* regole jumbotron */
 
+.jumbotron{
+    height: 600px;
+    
+    position: relative;
+}
 
+.container-jumbo {
+    width: 60%;
+    height: 550px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
 
+.title {
+    
+    height: 200px;
+  
+    
+}
+
+.aside {
+    width: 35%;
+    height: 350px;
+    
+}
 
 
 
@@ -71,5 +99,31 @@ button {
     height: 40px;
     width: 100px;
     background-color: blue;
+}
+
+.list-left, .list-right{
+    background-color: yellow;
+}
+
+.left, .right {
+    background-color: white; 
+}
+
+
+.jumbotron{
+    background-color: aqua;
+}
+
+
+.container-jumbo {
+    background-color: blanchedalmond;
+}
+
+.title {
+    background-color: blueviolet;
+}
+
+.aside {
+    background-color: azure;
 }
 
