@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    padding: 10px;
 }
 
 /* REGOLE HEADER */
@@ -13,6 +14,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 90px;
     
 }
 
@@ -34,7 +36,7 @@ a {
 .list-left  ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    
     
 }
 
@@ -54,33 +56,93 @@ button {
 /* regole jumbotron */
 
 .jumbotron{
-    height: 600px;
+    height: 700px;
     
     position: relative;
 }
 
 .container-jumbo {
-    width: 60%;
+    width: 1000px;
     height: 550px;
-    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    
 }
 
 .title {
-    
     height: 200px;
-  
-    
 }
 
 .aside {
     width: 35%;
     height: 350px;
+    
+}
+
+/* regole main */
+
+/* prima section */
+
+section {
+   
+}
+
+.container-section1{
+   height: 1000px;
+   width: 800px;
+   margin: 80px auto;
+   
+   
+}
+
+.title-section1{
+    max-width: 800px;
+    height: 100px;
+    
+    margin-bottom: 20px;
+}
+
+.row1 {
+    display: flex;
+    max-width: calc(100/3);
+    height: 880px;
+}
+
+.col{
+    width: 100%;
+    height: auto;
+}
+
+.row2 {
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+    
+}
+
+.row1, .row2, .col {
+    border: 1px solid green;
+}
+
+
+/* seconda section */
+.container-section2 {
+    width: 800px;
+   margin: 400px auto;
+   height: 450px;
+   background-color: brown;
+   
+}
+
+.img-section2 {
+    height: 450px;
+    width: 450px;
+    border: 1px solid black;
+    float: left;
+}
+
+.text-section2 {
     
 }
 
@@ -91,7 +153,7 @@ button {
 /* DEBUG */
 
 .nav-head {
-    height: 90px;
+   
     background-color: green;
 }
 
@@ -126,4 +188,17 @@ button {
 .aside {
     background-color: azure;
 }
+
+
+
+.container-section1 {
+    background-color: grey;
+}
+
+.title-section1{
+    background-color: beige;
+}
+
+
+
 
