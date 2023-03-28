@@ -129,7 +129,7 @@ section {
 /* seconda section */
 .container-section2 {
     width: 800px;
-   margin: 400px auto;
+   margin: 400px auto 200px;
    height: 450px;
    background-color: brown;
    
@@ -142,11 +142,30 @@ section {
     float: left;
 }
 
-.text-section2 {
+
+/* terza section */
+
+.container-section3 {
+    width: 800px;
     
+    margin: 200px auto;
+    background-color: pink;
+}
+
+.row-section3:after {
+content: "";
+display: table;
+clear: both;
 }
 
 
+
+.col-section3 {
+   
+    float: left;
+    width: calc((100%/3));
+    padding: 0; 
+}
 
 
 
@@ -200,5 +219,14 @@ section {
 }
 
 
+.row-section3 {
+    border: solid 4px white;
+}
 
+.col-section3 {
+    height: 250px;
+    background-color: violet;
+    border: solid 2px orange;
+
+}
 
