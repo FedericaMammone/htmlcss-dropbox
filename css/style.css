@@ -12,44 +12,74 @@
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
 }
+
+#logo-img {
+    margin: 5px 10px;
+    height: 25px;
+}
+
 
 /* sezione sinistra */
 .left, .right {
-    width: 30%;
+    width: 40%;
    
     display: flex;
     justify-content: space-around;
 }
 
+
 .list-left, .list-right {
-    width: 300px;
+    width: 500px;
     display: flex;
     align-items: center;
-    
+    margin-left: 20px;
+    color: red;
+}
+
+.list-right {
+    margin-left: 150px;
 }
 
 .list-left  ul {
     list-style: none;
-    display: flex; 
+    display: flex;
+    
 }
+
+
 
 li a {
     text-decoration: none;
     padding: 10px;
+    
 }
+
+
 
 /* sezione destra */
 
-button {
-    height: 40px;
+#butt-nav {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #0061FF;
+    border: 0;
+}
+
+#butt-nav:hover {
+    cursor: pointer;
 }
 
 .list-right ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 
@@ -57,7 +87,7 @@ button {
 
 .jumbotron{
     height: 700px;
-    
+    margin-top: 90px;
     position: relative;
 }
 
@@ -282,24 +312,24 @@ hr {
 
 /* DEBUG */
 
-.nav-head {
+/* .nav-head {
    
     background-color: green;
-}
+} */
 
-.logo {
+/* .logo {
     height: 40px;
-    width: 100px;
+    width: 200px;
     background-color: blue;
-}
+} */
 
-.list-left, .list-right{
+/* .list-left, .list-right{
     background-color: yellow;
 }
 
 .left, .right {
     background-color: white; 
-}
+} */
 
 
 .jumbotron{
