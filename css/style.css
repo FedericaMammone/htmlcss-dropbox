@@ -140,7 +140,7 @@ section {
     height: 450px;
     width: 450px;
     border: 1px solid black;
-    float: left;
+    float: left;background-color: bisque;
 }
 
 
@@ -222,7 +222,7 @@ clear: both;
     height: 250px;
     width: 100%;
     background-color: yellowgreen;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
 }
 
@@ -232,6 +232,26 @@ clear: both;
     margin: auto;
     background-color: green;
 }
+
+
+/* section6 */
+
+.container-section6 {
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    
+}
+
+.row-section6{
+    height: calc(100%/4);
+    width: auto;
+    border-bottom: 2px solid black;
+    
+}
+
+
+
 
 
 
@@ -319,4 +339,12 @@ clear: both;
 .mini-section {
     background-color: beige;
     border: solid 1px red;
+}
+
+.container-section6 {
+    background-color: rgb(231, 167, 84);
+}
+
+.row-section6 {
+    background-color: rgb(255, 217, 0);
 }
