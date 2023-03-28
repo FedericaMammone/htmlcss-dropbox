@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    padding: 10px;
-}
+
 
 /* REGOLE HEADER */
 .nav-head {
@@ -35,9 +32,12 @@ a {
 
 .list-left  ul {
     list-style: none;
-    display: flex;
-    
-    
+    display: flex; 
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
 }
 
 /* sezione destra */
@@ -82,7 +82,7 @@ button {
 
 /* regole main */
 
-/* prima section */
+/* section 1 */
 
 section {
    
@@ -126,7 +126,8 @@ section {
 }
 
 
-/* seconda section */
+/* section 2 */
+
 .container-section2 {
     width: 800px;
    margin: 400px auto 200px;
@@ -143,13 +144,14 @@ section {
 }
 
 
-/* terza section */
+
+/* section 3 */
 
 .container-section3 {
     width: 800px;
     
     margin: 200px auto;
-    background-color: pink;
+    
 }
 
 .row-section3:after {
@@ -166,6 +168,28 @@ clear: both;
     width: calc((100%/3));
     padding: 0; 
 }
+
+
+
+/* section 4 */
+
+.container-section4{
+    width: 800px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: blue;
+    
+}
+
+.text-section4 {
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+
+}
+ 
+
+
 
 
 
@@ -218,6 +242,9 @@ clear: both;
     background-color: beige;
 }
 
+.container-section3 {
+    background-color: pink;
+}
 
 .row-section3 {
     border: solid 4px white;
