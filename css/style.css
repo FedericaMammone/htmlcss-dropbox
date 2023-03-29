@@ -289,19 +289,42 @@ section {
 .container-section2 {
     width: 1000px;
    margin: 400px auto 100px;
-   height: 450px;
-   background-color: brown;
+   height: 500px;
+   ;
+   display: flex;
    
 }
 
 .img-section2 {
-    height: 450px;
-    width: 450px;
-    border: 1px solid black;
-    float: left;background-color: bisque;
+    height: 500px;
+    
 }
 
+.img-section2 img {
+    height: 500px;
+    width: auto;
+}
 
+.containerText-section2 {
+    padding: 40px;
+    
+    
+}
+
+#Text-section2 h2, #Text-section2 p, #Text-section2 button {
+margin-bottom: 30px;
+margin-right: 20px;
+}
+
+#Text-section2 button {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#Text-section2:hover button {
+    cursor: pointer;
+}
 
 /* section 3 */
 
