@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
+li {
+    list-style-type: none;
+    
+     
+}
+
+i {
+    clear: right;
+}
+
+button {
+    background-color: #0061FF;
+    padding: 5px 10px;
+    border: 0;
+}
 
 /* REGOLE HEADER */
 .nav-head {
@@ -44,7 +62,7 @@
 }
 
 .list-right {
-    margin-left: 150px;
+    margin-left: 110px;
 }
 
 .list-left  ul {
@@ -66,10 +84,9 @@ li a {
 /* sezione destra */
 
 #butt-nav {
-    padding: 5px 10px;
+   
     margin-right: 10px;
-    background-color: #0061FF;
-    border: 0;
+    
 }
 
 #butt-nav:hover {
@@ -86,29 +103,79 @@ li a {
 /* regole jumbotron */
 
 .jumbotron{
-    height: 700px;
-    margin-top: 90px;
+    height: 650px;
+    margin-top: 80px;
     position: relative;
+    background-color: #B4D0E7;
+   
+
 }
 
 .container-jumbo {
     width: 1000px;
     height: 550px;
+    margin-top: 110px;
     position: absolute;
-    top: 50%;
+    
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
+    
+   
 }
 
 .title {
     height: 200px;
 }
 
+.title h1 {
+    font-size:70px;
+}
+
 .aside {
     width: 35%;
-    height: 350px;
+    height: 330px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#butt-jumbo {
+    padding: 5px 10px;
+    background-color: #0061FF;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+span > .aside {
+    margin-top: 10px;
+}
+
+.fa-arrow-down-long {
+    margin-bottom: 0;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    color: black;
     
 }
+
+.img-jumbo {
+    
+    width: 65%;
+    height: 330px;
+    float: right;
+    position: absolute;
+    top: 220px;
+    left: 35%;
+}
+
+.img-jumbo img {
+    height: 400px;
+}
+
 
 /* regole main */
 
@@ -120,18 +187,26 @@ section {
 
 .container-section1{
    height: 1000px;
-   width: 800px;
-   margin: 80px auto;
+   width: 1000px;
+   margin: 150px auto;
    
    
 }
 
 .title-section1{
-    max-width: 800px;
-    height: 100px;
+    max-width: 1000px;
+    height: 150px;
     
     margin-bottom: 20px;
 }
+.title-section1 h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    
+}
+
+
+
 
 .row1 {
     display: flex;
@@ -142,7 +217,50 @@ section {
 .col{
     width: 100%;
     height: auto;
+    
 }
+
+
+
+.content-col {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.content-col span {
+    display: block;
+}
+
+.title-col {
+    text-align: center;
+   
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+
+#list1col li {
+    padding-bottom: 20px;
+}
+
+.butt-section1 button{
+ padding: 10px 30px;
+ 
+}
+
+.butt-section1 {
+    text-align: center;
+}
+
+.or {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    width: 60px;
+}
+
+
 
 .row2 {
     height: 200px;
@@ -155,11 +273,21 @@ section {
     border: 1px solid green;
 }
 
+.rowInrow2 {
+    height: 80px;
+    width: auto;
+    border: 1px solid green;
+}
+
+#butt-row2 {
+    float: right;
+}
+
 
 /* section 2 */
 
 .container-section2 {
-    width: 800px;
+    width: 1000px;
    margin: 400px auto 100px;
    height: 450px;
    background-color: brown;
@@ -178,7 +306,7 @@ section {
 /* section 3 */
 
 .container-section3 {
-    width: 800px;
+    width: 1000px;
     
     margin: 200px auto;
     
@@ -193,7 +321,7 @@ clear: both;
 
 
 .col-section3 {
-   
+    height: 300px;
     float: left;
     width: calc((100%/3));
     padding: 0; 
@@ -204,7 +332,7 @@ clear: both;
 /* section 4 */
 
 .container-section4{
-    width: 800px;
+    width: 1000px;
     height: 200px;
     margin: 200px auto;
     
@@ -257,7 +385,7 @@ clear: both;
 }
 
 #foot-section5 {
-    width: 800px;
+    width: 1000px;
     height: 200px;
     margin: auto;
     background-color: green;
@@ -267,7 +395,7 @@ clear: both;
 /* section6 */
 
 .container-section6 {
-    width: 800px;
+    width: 1000px;
     height: 400px;
     margin: 100px auto;
     
@@ -332,12 +460,12 @@ hr {
 } */
 
 
-.jumbotron{
+/* .jumbotron{
     background-color: aqua;
-}
+} */
 
 
-.container-jumbo {
+/* .container-jumbo {
     background-color: blanchedalmond;
 }
 
@@ -347,7 +475,7 @@ hr {
 
 .aside {
     background-color: azure;
-}
+} */
 
 
 
@@ -368,7 +496,7 @@ hr {
 }
 
 .col-section3 {
-    height: 250px;
+   
     background-color: violet;
     border: solid 2px orange;
 
