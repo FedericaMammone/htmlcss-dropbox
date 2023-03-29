@@ -335,21 +335,39 @@ margin-right: 20px;
     
 }
 
+#title-section3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
 .row-section3:after {
 content: "";
 display: table;
 clear: both;
 }
 
-
-
-.col-section3 {
-    height: 300px;
-    float: left;
-    width: calc((100%/3));
-    padding: 0; 
+.row-section3 {
+    margin-top: 40px;
 }
 
+.col-section3 {
+    
+    float: left;
+    width: calc((100%/3));
+    padding: 30px; 
+}
+
+.col-section3 img {
+    height: 200px;
+}
+
+.col-section3 h3, .col-section3 img {
+    margin-bottom: 20px;
+}
+
+.col-section3 p {
+    font-size: 14px;
+}
 
 
 /* section 4 */
@@ -510,20 +528,20 @@ hr {
     background-color: beige;
 }
 
-.container-section3 {
+/* .container-section3 {
     background-color: pink;
-}
+} */
 
-.row-section3 {
+/* .row-section3 {
     border: solid 4px white;
-}
+} */
 
-.col-section3 {
+/* .col-section3 {
    
     background-color: violet;
     border: solid 2px orange;
 
-}
+} */
 
 .container-section4 {
     background-color: blue;
