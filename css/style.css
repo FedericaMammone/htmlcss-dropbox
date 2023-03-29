@@ -354,7 +354,7 @@ clear: both;
     
     float: left;
     width: calc((100%/3));
-    padding: 30px; 
+    padding: 30px 50px 30px 0; 
 }
 
 .col-section3 img {
@@ -383,8 +383,15 @@ clear: both;
 .text-section4 {
     width: 400px;
     height: 200px;
-    
+}
 
+.text-section4 h1 {
+    margin-bottom: 60px;
+}
+
+.text-section4 a {
+    font-size: 13px;
+    color: blue;
 }
  
 
@@ -392,10 +399,8 @@ clear: both;
 
 .container-section5{
     max-width: 100%;
-    
     margin-top: 100px;
     margin-bottom: 0;
-    
 }
 
 .container-section5:after {
@@ -415,6 +420,8 @@ clear: both;
     width: calc(100%/2);
     height: 250px;
     float: left;
+    position: relative;
+    color: white;
 }
 
 .containerfoot-section5 {
@@ -431,6 +438,97 @@ clear: both;
     margin: auto;
     background-color: green;
 }
+
+.mini-section img {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+}
+
+.container-sec-center {
+    padding: 40px;
+   
+}
+
+.centrale {
+     background-color: #F5F5F5;
+}
+
+.container-sec-center img, .container-sec-center p {
+    margin-bottom: 30px;
+}
+
+.container-sec-center p, .container-sec-center span {
+    font-size: 13px;
+}
+
+.centrale img {
+    height: 80px;
+}
+
+.uno {
+    background-color: #A2D39B;
+}
+
+.uno img {
+    height: 50px;
+}
+
+.due {
+    background-color: #61082B;
+}
+
+.due img {
+    height: 80px;
+}
+
+.tre {
+    background-color: #0093CE;
+}
+
+.tre img {
+    height: 20px;
+}
+
+.quattro {
+    background-color: #FF1C1C;
+}
+
+.quattro img {
+    height: 60px;
+}
+
+.cinque {
+    background-color: #D5001F;
+}
+
+.cinque img {
+    height: 50px;
+}
+
+.sei {
+    background-color: #B4D0E7;
+}
+
+.sei img {
+    height: 15px;
+}
+
+.sette {
+    background-color:#0D2481;
+}
+
+.sette img {
+    height: 60px;
+}
+
+.otto {
+    background-color:#FFD830;
+}
+
 
 
 /* section6 */
@@ -543,15 +641,15 @@ hr {
 
 } */
 
-.container-section4 {
+/* .container-section4 {
     background-color: blue;
 }
 
 .text-section4 {
     background-color: aqua;
-}
+} */
 
-.container-section5{
+/* .container-section5{
     background-color: aquamarine;
 }
 
@@ -561,9 +659,9 @@ hr {
 }
 
 .mini-section {
-    background-color: beige;
-    border: solid 1px red;
-}
+    /* background-color: beige; */
+    /* border: solid 1px red;
+} */ 
 
 .container-section6 {
     background-color: rgb(231, 167, 84);
