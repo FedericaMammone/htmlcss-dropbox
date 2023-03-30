@@ -499,7 +499,11 @@ clear: both;
 
 .centrale {
      background-color: #F5F5F5;
+     overflow: auto;
+    
 }
+
+
 
 .container-sec-center img, .container-sec-center p {
     margin-bottom: 30px;
@@ -515,6 +519,7 @@ clear: both;
 
 .uno {
     background-color: #A2D39B;
+    border: 20px solid rgba(255, 255, 255, 0.5);
 }
 
 .uno img {
@@ -631,6 +636,7 @@ clear: both;
     position: absolute;
     bottom: 0;
     display: none;
+    
 }
 
 .row-section6:active .answer {
