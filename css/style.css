@@ -24,6 +24,10 @@ button {
     border: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* REGOLE HEADER */
 .nav-head {
     display: flex;
@@ -38,6 +42,11 @@ button {
     background-color: white;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 #logo-img {
     margin: 5px 10px;
     height: 25px;
@@ -46,18 +55,19 @@ button {
 
 /* sezione sinistra */
 .left, .right {
-    width: 40%;
+    width: auto;
    
     display: flex;
     justify-content: space-around;
+    height: 100%;
 }
 
 
 .list-left, .list-right {
-    width: 500px;
+    
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    
     color: red;
 }
 
@@ -65,12 +75,24 @@ button {
     margin-left: 110px;
 }
 
+.list-right ul {
+    height: 100%;
+}
+
 .list-left  ul {
     list-style: none;
     display: flex;
-    
+    height: 100%;
 }
 
+.list-nav li:hover  {
+border-bottom: 3px solid blue;
+
+}
+
+.list-nav li {
+    margin-top: 35px;
+}
 
 
 li a {
@@ -85,7 +107,7 @@ li a {
 
 #butt-nav {
    
-    margin-right: 10px;
+    margin: auto 10px;
     
 }
 
@@ -104,7 +126,7 @@ li a {
 
 .jumbotron{
     height: 650px;
-    margin-top: 80px;
+    margin-top: 70px;
     position: relative;
     background-color: #B4D0E7;
    
@@ -181,9 +203,7 @@ span > .aside {
 
 /* section 1 */
 
-section {
-   
-}
+
 
 .container-section1{
    height: 1000px;
@@ -206,25 +226,27 @@ section {
 }
 
 
-
-
 .row1 {
+    
     display: flex;
-    max-width: calc(100/3);
-    height: 880px;
+    justify-content: space-between;
 }
 
 .col{
-    width: 100%;
+    width: calc(100%/3 - 50px);
     height: auto;
+    border: 1px solid grey;
     
 }
 
-
+.container-col {
+    padding: 20px;
+}
 
 .content-col {
-    padding: 20px;
+    
     font-size: 15px;
+    line-height: 30px;
 }
 
 .content-col span {
@@ -233,20 +255,30 @@ section {
 
 .title-col {
     text-align: center;
-   
-    border: 1px solid black;
-    padding: 5px;
-    
+    border: 1px solid grey;
+    padding: 5px 0;
+    margin: 0;
 }
 
+.period {
+    color: grey;
+    font-size: 15px;
+}
+
+.list1-col {
+margin-top: 30px;
+}
 
 #list1col li {
     padding-bottom: 20px;
+    
 }
 
 .butt-section1 button{
- padding: 10px 30px;
- 
+ padding: 10px 0;
+ margin-top: 20px;
+ width: 220px;
+ color: white;
 }
 
 .butt-section1 {
@@ -254,33 +286,58 @@ section {
 }
 
 .or {
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
-    padding: 20px 20px;
-    width: 60px;
+    padding: 50px 0;
 }
 
-
-
-.row2 {
-    height: 200px;
-    width: auto;
-    margin-top: 20px;
+.section-list2-col {
+    margin-top: 50px;
     
 }
 
-.row1, .row2, .col {
-    border: 1px solid green;
+
+.list2-col li {
+    margin: 20px 0;
+}
+
+.fa-check {
+    color: #0061FF;
+    margin-right: 5px;
+}
+
+.row2 {
+    width: auto;
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+
+.container-row2 {
+    padding: 20px;
+}
+
+.rigaFinale-row2 {
+    width: 700px;
+    margin-top: 50px ;
+}
+
+.rowInrow2 h2 {
+    margin-bottom: 20px;
 }
 
 .rowInrow2 {
     height: 80px;
     width: auto;
-    border: 1px solid green;
+    
 }
 
 #butt-row2 {
     float: right;
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+#butt-row2:hover {
+    cursor: pointer;
 }
 
 
@@ -288,7 +345,7 @@ section {
 
 .container-section2 {
     width: 1000px;
-   margin: 400px auto 100px;
+   margin: 600px auto 100px;
    height: 500px;
    ;
    display: flex;
@@ -424,20 +481,7 @@ clear: both;
     color: white;
 }
 
-.containerfoot-section5 {
-    height: 250px;
-    width: 100%;
-    background-color: yellowgreen;
-    margin-bottom: 100px;
-    display: flex;
-}
 
-#foot-section5 {
-    width: 1000px;
-    height: 200px;
-    margin: auto;
-    background-color: green;
-}
 
 .mini-section img {
     
@@ -529,6 +573,37 @@ clear: both;
     background-color:#FFD830;
 }
 
+.containerfoot-section5 {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #B4D0E7;
+    
+}
+
+#foot-section5 {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#foot-section5 button {
+    background-color: white;
+    padding: 10px;
+}
+
+.h1 {
+    width: 300px; 
+    color: #61082B;
+}
+
+
+
 
 
 /* section6 */
@@ -538,14 +613,39 @@ clear: both;
     height: 400px;
     margin: 100px auto;
     
+    
 }
 
 .row-section6{
     height: calc(100%/4);
     width: auto;
     border-bottom: 2px solid black;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
+
+.answer {
+    
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.row-section6:active .answer {
+    display: inline-block;
+}
+
+.row-section6 h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.row-section6 i {
+    margin-right: 40px;
+}
+
 
 
 /* footer */
@@ -553,27 +653,43 @@ clear: both;
 .container-footer {
     height: 500px;
     background-color: black;
-    padding: 40px
+    padding: 40px;
     
 }
 
 #contain-foot {
-    width: 1000px;
+    width: 1200px;
     height: 400px;
     margin: 10px auto;  
+    
+}
+
+
+.col-footlast-of-type {
+    padding-right: 30px
 }
 
 .col-foot {
     width: calc(100%/5);
-    border: 1px solid red;
+    
     float: left;
     margin-bottom: 150px;
+    line-height: 30px;
+    color: white;
     
+}
+
+.col-foot h3 {
+    margin-bottom: 10px;
 }
 
 hr {
     width: 100px;
     margin-bottom: 30px;
+}
+
+#contain-foot section {
+    color: grey;
 }
 
 
@@ -618,13 +734,17 @@ hr {
 
 
 
-.container-section1 {
+/* .container-section1 {
     background-color: grey;
 }
 
-.title-section1{
+/* .row1, .row2, .col {
+    border: 1px solid green;
+} */
+
+/* .title-section1{
     background-color: beige;
-}
+} */
 
 /* .container-section3 {
     background-color: pink;
@@ -663,14 +783,14 @@ hr {
     /* border: solid 1px red;
 } */ 
 
-.container-section6 {
+/* .container-section6 {
     background-color: rgb(231, 167, 84);
 }
 
 .row-section6 {
     background-color: rgb(255, 217, 0);
-}
+} */
 
-#contain-foot {
+/* #contain-foot {
     background-color: rgb(43, 132, 209);
-}
+} */
