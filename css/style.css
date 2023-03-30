@@ -101,6 +101,39 @@ li a {
     
 }
 
+/* lista nascosta */
+
+.container-lista-nascosta {
+    width: auto;
+    
+    margin-top: 35px;
+    background-color: #0061FF;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+
+
+.lista-nascosta {
+    flex-direction: column;
+}
+
+
+.lista-nascosta li{
+    margin: 15px auto;
+    cursor: pointer;
+    
+
+}
+
+.list-nav li:hover .container-lista-nascosta {
+    display: block;
+    
+}
+
+
+
+
 
 
 /* sezione destra */
